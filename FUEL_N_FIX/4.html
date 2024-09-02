@@ -1,0 +1,31 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+</head>
+<body>
+<link rel="stylesheet" href="./styles/mystyles.css">
+
+<div class="id-container">
+    <h3 id="prblm">Select Type of Problem</h3><select Name="type" class="box" required><option>Tyre misalignment(related)<option>Engine Relay<option>Break Fluctuating</select>
+    <h3 id="location">Select Location</h3><select Name="location" class="box" required><option>Current Location<option>Type</select><br>
+    <!-- <h3>According to your location The mechanics near your surrounding are </h3> -->
+    <h3 id="mechanic">Select Mechanic</h3><select Name=" type" class="box" required><option>Rajinikanth(9347655056)<option>Seenu(7337566774)<option>Joseph Vijay(6304682711)</select><br><br>
+    <button type="submit" class="btn" onclick="openPopup()">Place Order</button>
+</div>
+    <div class="popup" id="popup">
+        <img src="./img/tick.png">
+        <h2>Thank You!</h2>
+        <p>According to your response<br> Your mechanic is on the way they will reach you in few minutes<br> for any queries contact them or 6305845316.</p>
+        <button type="button" onclick="closePopup()">OK</button>
+    </div>
+    <script>
+        let popup = document.getElementById("popup");
+        function openPopup(){
+            popup.classList.add("open-popup");
+        }
+        function closePopup(){
+            popup.classList.remove("open-popup");
+        }
+    </script>
+</body>
+</html>

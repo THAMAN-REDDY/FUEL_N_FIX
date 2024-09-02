@@ -1,0 +1,31 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+</head>
+<body>
+<link rel="stylesheet" href="./styles/mystyle.css">
+<div class="id-container">
+    <h2 id="fuelname">Select Fuel Type</h2><select Name="types" class="box" required><option>Petrol</option><br><option>Diesel</option></select>
+    <h2 id="liters">Select Litres</h2><select Name="litres" class="box" required><option>1 Litre</option><option>2 Litre</option><option>3 Litre</option><option>4 Litre</option><option>5 Litre</option></select><br>
+    <h2 id="location">Select Location</h2><select Name="location" class="box"required><option>Current Location</option><option>Type</option></select><br><br>
+    <button type="submit" class="btn" onclick="openPopup()">Place Order</button>
+</div>
+<div class="popup" id="popup">
+    <img src="tick.png">
+    <h2>Thank You!</h2>
+    <p>Your response has been recorded<br>You will get your product in a few minutes<br>For any queries you may contact:7337566774</p>
+    <button type="button" onclick="closePopup()">OK</button>
+</div>
+<script>
+    let popup = document.getElementById("popup");
+    function openPopup(){
+           popup.classList.add("open-popup");
+
+            }
+    function closePopup(){
+        popup.classList.remove("open-popup");
+    }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,23 @@
+body{
+    background-color: aliceblue;
+    background-image: url(https://static.turbosquid.com/Preview/2016/01/23__08_05_09/01.jpgee3dfd80-238b-4f6d-bbd7-4f355009994eZoom.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+#container{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 100px;
+    mix-blend-mode: multiply;
+    
+}
+/* .img1,.img2{
+    border: 1px solid black;
+} */
+.para{
+    text-align: center;
+    color: blue;
+    text-shadow: 2px 2px black;
+    font-size: xx-large;
+}
